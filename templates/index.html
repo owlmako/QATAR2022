@@ -6,8 +6,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Qatar 2022</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    Hello Qatar!
+<div class="container">
+    <div class="container-card">
+        <div class="card">
+            <div class="card-title">
+                <img src="{pais1_img}" alt="{pais1_name}">
+                VS
+                <img src="{pais2_img" alt="{pais2_name}">
+            </div>
+            <div class="card-body">
+                {pais1_pts} - {pais2_pts}
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
